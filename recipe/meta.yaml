@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 3fb2397a8ac1628a9954740d9870816d2bd330fb79a4f56c470a8463c94de6ba
+  sha256: 36242970c70337f8e3d149f76a64e20a6ac2f63b4ba8cc6d6052899465fad91d
 
 build:
   number: 0
