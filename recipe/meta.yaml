@@ -1,5 +1,5 @@
 {% set name = "rxn_rebuild" %}
-{% set version = "2.1.2" %}
+{% set version = "2.1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 36242970c70337f8e3d149f76a64e20a6ac2f63b4ba8cc6d6052899465fad91d
+  sha256: fada560f48cfa0001a6e6298bb1842c742cac716c179b04a06ef0994b98eb0ed
 
 build:
   number: 0
@@ -36,7 +36,7 @@ test:
     - pytest -v
 about:
   home: https://github.com/brsynth/{{ name|lower }}
-  summary: "Rebuild full reaction from reaction rule"
+  summary: Rebuild full reaction from reaction rule
   license: MIT
   license_file: LICENSE
 
