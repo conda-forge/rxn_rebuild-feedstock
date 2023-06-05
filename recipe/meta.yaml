@@ -10,7 +10,7 @@ source:
   sha256: af08b694802a5c8d3ffa677bb065d7cdc02d32ef9397cfa0011391dd72fb6010
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install -vv .
 
@@ -21,7 +21,7 @@ requirements:
   run:
     - python >=3.6
     - brs_utils
-    - rr_cache
+    - rr_cache >=3.1.1
 
 test:
   source_files:
