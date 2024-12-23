@@ -10,16 +10,16 @@ source:
   sha256: af08b694802a5c8d3ffa677bb065d7cdc02d32ef9397cfa0011391dd72fb6010
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install -vv .
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - brs_utils
     - rr_cache >=3.1.1
 
@@ -30,6 +30,7 @@ test:
     - {{ name|lower }}
   requires:
     - pytest
+    - python {{ python_min }}
   commands:
     - python -m {{ name|lower }} --help
     - cd tests
