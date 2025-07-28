@@ -27,7 +27,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
-| [![Conda Recipe](https://img.shields.io/badge/recipe-rxn_rebuild-green.svg)](https://anaconda.org/conda-forge/rxn_rebuild) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rxn_rebuild.svg)](https://anaconda.org/conda-forge/rxn_rebuild) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rxn_rebuild.svg)](https://anaconda.org/conda-forge/rxn_rebuild) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rxn_rebuild.svg)](https://anaconda.org/conda-forge/rxn_rebuild) |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-rxn__rebuild-green.svg)](https://anaconda.org/conda-forge/rxn_rebuild) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/rxn_rebuild.svg)](https://anaconda.org/conda-forge/rxn_rebuild) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/rxn_rebuild.svg)](https://anaconda.org/conda-forge/rxn_rebuild) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/rxn_rebuild.svg)](https://anaconda.org/conda-forge/rxn_rebuild) |
 
 Installing rxn_rebuild
 ======================
