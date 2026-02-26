@@ -1,5 +1,5 @@
 {% set name = "rxn_rebuild" %}
-{% set version = "3.1.5" %}
+{% set version = "3.1.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/brsynth/{{ name }}/archive/{{ version }}.zip
-  sha256: 4690d212ad7e548b79b2f3b32949572827c049d1c4b6ffbd56a044830df8568e
+  sha256: b394475bae0010ab570333c4333c22e27d1b580229123ecdb6478876fea9e936
 
 build:
   number: 0
