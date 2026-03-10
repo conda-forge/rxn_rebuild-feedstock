@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - brs_utils
-    - rr_cache >=3.3.0
+    - rr_cache >=3.3.2
     - chemlite
 
 test:
