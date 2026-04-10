@@ -30,12 +30,9 @@ test:
   imports:
     - {{ name|lower }}
   requires:
-    - pytest
     - python {{ python_min }}
   commands:
     - python -m {{ name|lower }} --help
-    - cd tests
-    - pytest -v
 about:
   home: https://github.com/brsynth/{{ name|lower }}
   summary: Rebuild full reaction from reaction rule
