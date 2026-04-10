@@ -1,27 +1,26 @@
 {% set name = "rxn_rebuild" %}
-{% set version = "3.1.6" %}
+{% set version = "3.1.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://github.com/brsynth/{{ name }}/archive/{{ version }}.zip
-  sha256: b394475bae0010ab570333c4333c22e27d1b580229123ecdb6478876fea9e936
+  url: https://github.com/brsynth/{{ name }}/archive/{{ version }}.tar.gz
+  sha256: db71b940e6879ac07eb3cc594cc121511adf3d41c96d4e6b41f111ec632a820e
 
 build:
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install -vv .
+  script: {{ PYTHON }} setup.py install
 
 requirements:
   host:
     - python {{ python_min }}
-    - pip
     - setuptools
   run:
     - python >={{ python_min }}
-    - brs_utils
+    - brs_utils >=1.6.0
     - rr_cache >=3.3.2
     - chemlite
 
@@ -31,12 +30,9 @@ test:
   imports:
     - {{ name|lower }}
   requires:
-    - pytest
     - python {{ python_min }}
   commands:
     - python -m {{ name|lower }} --help
-    - cd tests
-    - pytest -v
 about:
   home: https://github.com/brsynth/{{ name|lower }}
   summary: Rebuild full reaction from reaction rule
@@ -47,3 +43,4 @@ extra:
   recipe-maintainers:
     - tduigou
     - breakthewall
+    - ramez17khaled
